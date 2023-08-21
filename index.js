@@ -42,3 +42,6 @@ app.post("/api/paragraph", handler.getData);
 app.post("/api/codegen", reply);
 app.post("/api/codecon", codecon);
 app.post("/api/chat", chat);
+app.get('/',(req,res)=>{
+  res.json({message:"Routes starts at /api/"});
+})
